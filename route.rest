@@ -2,14 +2,46 @@ GET http://localhost:8080/products
 
 ###
 
-//Get One (add blank line after Connect-Type)
+//Get contain 'kl'
+GET http://localhost:8080/products?name=kl
+
+//Get via Id
+http://localhost:8080/products/65d85f155a0b43b9692a5b49
+
+###
+
+//Add One (add blank line after Connect-Type)
 POST http://localhost:8080/products
 Content-Type: application/json
 
 {
-  "name": "Electric Hammer",
-  "description": "Used for nailing",
-  "price": 24.99,
+  "name": "Electric Bike",
+  "description": "Used for biking",
+  "price": 74.99,
   "quantity": 5,
+  "category": "Electronics"
+}
+
+###
+
+//Delete
+DELETE http://localhost:8080/products/65d85f155a0b43b9692a5b49
+
+###
+
+//Delete All
+DELETE http://localhost:8080/products
+
+###
+
+//Update
+PATCH  http://localhost:8080/products/65dbe09acb854d9cbd6a3292
+Content-Type: application/json
+
+{
+  "name": "Electric Spoon",
+  "description": "Used for soup",
+  "price": 44.99,
+  "quantity": 9,
   "category": "Electronics"
 }
