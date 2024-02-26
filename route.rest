@@ -2,8 +2,8 @@ GET http://localhost:8080/products
 
 ###
 
-//Get contain 'kl'
-GET http://localhost:8080/products?name=kl
+//Get contain 'kw'
+GET http://localhost:8080/products?name=kw
 
 //Get via Id
 http://localhost:8080/products/65d85f155a0b43b9692a5b49
