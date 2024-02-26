@@ -1,0 +1,15 @@
+GET http://localhost:8080/products
+
+###
+
+//Get One (add blank line after Connect-Type)
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "name": "Electric Hammer",
+  "description": "Used for nailing",
+  "price": 24.99,
+  "quantity": 5,
+  "category": "Electronics"
+}
